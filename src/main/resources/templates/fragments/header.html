@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<body>
+<th:block th:fragment="header">
+
+    <nav class="white" role="navigation">
+        <div class="nav-wrapper container">
+            <a id="logo-container" th:href="@{/}" class="material-icons" style="color: #000;font-size: 32px" >book</a>
+
+            <ul class="right hide-on-med-and-down">
+                <li sec:authorize="isAuthenticated()"><a th:href="@{/logout}">Sign Out</a></li>
+                <li sec:authorize="isAnonymous()" ><a th:href="@{/login}">Login</a></li>
+            </ul>
+
+            <a href="#" data-activates="nav-mobile" class="sidenav-trigger button-collapse"><i class="material-icons">menu</i></a>
+        </div>
+    </nav>
+
+</th:block>
+</body>
+</html>
