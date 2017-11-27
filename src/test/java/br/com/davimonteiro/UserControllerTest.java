@@ -1,5 +1,7 @@
 package br.com.davimonteiro;
 
+import br.com.davimonteiro.domain.User;
+import br.com.davimonteiro.repository.UserRepository;
 import com.google.common.reflect.TypeToken;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
