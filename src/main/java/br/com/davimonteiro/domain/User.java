@@ -1,4 +1,4 @@
-package br.com.davimonteiro;
+package br.com.davimonteiro.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -23,6 +23,5 @@ public class User {
 	private String name;
 
 	private String password;
-	
 
 }
